@@ -9,3 +9,7 @@ Step 3  :  First screen will show the 2 buttons as step1 and step2 as shown in t
 
 Step 4  : Click on step 1 button then u will navigate to the screen which will give the current temparature details of the cities you entered in the edittext..we can enter multiple cities at a time by using the commas and enter the button GET TEMPARATURE button then u will get data as shown  in  the below.
 
+![1608306188909](https://user-images.githubusercontent.com/76216373/102633832-fbb7b880-4176-11eb-83c0-efe002a04692.JPEG)
+
+Step 5  : Click on the step2  button then it will ask you the permission to get the curret location for the first time if you accept then it wont ask you again
+Step 6  : After accepting the location permissions then it will navigate to the screen which will give you the future 5 days weather report with temp,wind speed and weather description....below is the screenshot regarding that...
