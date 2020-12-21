@@ -1,13 +1,13 @@
 package santosh.com.openweathertask.data.api
 
-class ApiHelper(private val apiService: ApiService) {
-    suspend fun getCurrentDayLocationInfo(
+class ApiHelperImpelmentation(private val apiService: ApiService) : ApiHelper {
+    override suspend fun getCurrentDayLocationInfo(
         cityName: String,
         apiKey: String
     ) =
         apiService.getCurrentLocationInfo(cityName, apiKey)
 
-    suspend fun getCurrentCityTemparatureInfo(
+    override suspend fun getCurrentCityTemparatureInfo(
         lat: Double,
         long: Double,
         apiKey: String

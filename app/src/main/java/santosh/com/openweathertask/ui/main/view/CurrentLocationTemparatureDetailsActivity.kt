@@ -25,7 +25,7 @@ import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
 import santosh.com.openweathertask.R
-import santosh.com.openweathertask.data.api.ApiHelper
+import santosh.com.openweathertask.data.api.ApiHelperImpelmentation
 import santosh.com.openweathertask.data.api.RetrofitBuilder
 import santosh.com.openweathertask.data.model.currentCityModels.CurrentCityWeatherResponse
 import santosh.com.openweathertask.ui.base.ViewModelFactory
@@ -216,7 +216,7 @@ class CurrentLocationTemparatureDetailsActivity : AppCompatActivity(),
     private fun setupViewModel() {
         viewModel = ViewModelProviders.of(
             this,
-            ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+            ViewModelFactory(ApiHelperImpelmentation(RetrofitBuilder.apiService))
         ).get(MainViewModel::class.java)
     }
 

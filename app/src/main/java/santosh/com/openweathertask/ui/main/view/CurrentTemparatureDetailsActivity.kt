@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import santosh.com.openweathertask.R
-import santosh.com.openweathertask.data.api.ApiHelper
+import santosh.com.openweathertask.data.api.ApiHelperImpelmentation
 import santosh.com.openweathertask.data.api.RetrofitBuilder
 import santosh.com.openweathertask.data.model.CurrentWeatherResponse
 import santosh.com.openweathertask.ui.base.ViewModelFactory
@@ -40,7 +40,7 @@ class CurrentTemparatureDetailsActivity : AppCompatActivity() {
     private fun setupViewModel() {
         viewModel = ViewModelProviders.of(
             this,
-            ViewModelFactory(ApiHelper(RetrofitBuilder.apiService))
+            ViewModelFactory(ApiHelperImpelmentation(RetrofitBuilder.apiService))
         ).get(MainViewModel::class.java)
     }
 
